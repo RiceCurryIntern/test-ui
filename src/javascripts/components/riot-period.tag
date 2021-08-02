@@ -68,6 +68,7 @@
       <div class="dropdown-item dropdown-item-from">
         <form onsubmit={ submit }>
           <riot-period-input name="from" v={ from.format('YYYY-MM-DD') }></riot-period-input>
+          〜
           <riot-period-input name="to" v={ to.format('YYYY-MM-DD') }></riot-period-input>
           <button type="submit" class="btn btn-secondary">決定</button>
         </form>
@@ -116,7 +117,7 @@
   }
 
   //選択して期間を変更
-  function setPeriod(self, day, type) {s
+  function setPeriod(self, day, type) {
     self.period = day;
     self.period_type = type;
 
